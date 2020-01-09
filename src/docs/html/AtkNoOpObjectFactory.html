@@ -3,8 +3,8 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>AtkNoOpObjectFactory</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.69.1">
-<link rel="start" href="index.html" title="ATK - Accessibility Toolkit">
+<meta name="generator" content="DocBook XSL Stylesheets V1.75.1">
+<link rel="home" href="index.html" title="ATK - Accessibility Toolkit">
 <link rel="up" href="atk.html" title="ATK Library">
 <link rel="prev" href="AtkNoOpObject.html" title="AtkNoOpObject">
 <link rel="next" href="AtkObject.html" title="AtkObject">
@@ -36,7 +36,7 @@
                 <a href="#AtkNoOpObjectFactory.object-hierarchy" class="shortcut">Object Hierarchy</a>
 </td></tr>
 </table>
-<div class="refentry" lang="en">
+<div class="refentry" title="AtkNoOpObjectFactory">
 <a name="AtkNoOpObjectFactory"></a><div class="titlepage"></div>
 <div class="refnamediv"><table width="100%"><tr>
 <td valign="top">
@@ -45,24 +45,22 @@
 </td>
 <td valign="top" align="right"></td>
 </tr></table></div>
-<div class="refsynopsisdiv">
+<div class="refsynopsisdiv" title="Synopsis">
 <a name="AtkNoOpObjectFactory.synopsis"></a><h2>Synopsis</h2>
 <pre class="synopsis">
-                    <a href="AtkNoOpObjectFactory.html#AtkNoOpObjectFactory-struct" title="AtkNoOpObjectFactory">AtkNoOpObjectFactory</a>;
-<a href="AtkObjectFactory.html" title="AtkObjectFactory">AtkObjectFactory</a> *  <a href="AtkNoOpObjectFactory.html#atk-no-op-object-factory-new" title="atk_no_op_object_factory_new ()">atk_no_op_object_factory_new</a>        (void);
+                    <a class="link" href="AtkNoOpObjectFactory.html#AtkNoOpObjectFactory-struct" title="AtkNoOpObjectFactory">AtkNoOpObjectFactory</a>;
+<a class="link" href="AtkObjectFactory.html" title="AtkObjectFactory">AtkObjectFactory</a> *  <a class="link" href="AtkNoOpObjectFactory.html#atk-no-op-object-factory-new" title="atk_no_op_object_factory_new ()">atk_no_op_object_factory_new</a>        (void);
 </pre>
 </div>
-<div class="refsect1" lang="en">
+<div class="refsect1" title="Object Hierarchy">
 <a name="AtkNoOpObjectFactory.object-hierarchy"></a><h2>Object Hierarchy</h2>
 <pre class="synopsis">
-  <a
-href="http://library.gnome.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#GObject"
->GObject</a>
-   +----<a href="AtkObjectFactory.html" title="AtkObjectFactory">AtkObjectFactory</a>
+  GObject
+   +----<a class="link" href="AtkObjectFactory.html" title="AtkObjectFactory">AtkObjectFactory</a>
          +----AtkNoOpObjectFactory
 </pre>
 </div>
-<div class="refsect1" lang="en">
+<div class="refsect1" title="Description">
 <a name="AtkNoOpObjectFactory.description"></a><h2>Description</h2>
 <p>
 The AtkObjectFactory which creates an AtkNoOpObject. An instance of this is
@@ -70,9 +68,9 @@ created by an AtkRegistry if no factory type has not been specified to
 create an accessible object of a particular type.
 </p>
 </div>
-<div class="refsect1" lang="en">
+<div class="refsect1" title="Details">
 <a name="AtkNoOpObjectFactory.details"></a><h2>Details</h2>
-<div class="refsect2" lang="en">
+<div class="refsect2" title="AtkNoOpObjectFactory">
 <a name="AtkNoOpObjectFactory-struct"></a><h3>AtkNoOpObjectFactory</h3>
 <pre class="programlisting">typedef struct _AtkNoOpObjectFactory AtkNoOpObjectFactory;</pre>
 <p>
@@ -80,20 +78,19 @@ The AtkNoOpObjectFactory structure should not be accessed directly.
 </p>
 </div>
 <hr>
-<div class="refsect2" lang="en">
+<div class="refsect2" title="atk_no_op_object_factory_new ()">
 <a name="atk-no-op-object-factory-new"></a><h3>atk_no_op_object_factory_new ()</h3>
-<pre class="programlisting"><a href="AtkObjectFactory.html" title="AtkObjectFactory">AtkObjectFactory</a> *  atk_no_op_object_factory_new        (void);</pre>
+<pre class="programlisting"><a class="link" href="AtkObjectFactory.html" title="AtkObjectFactory">AtkObjectFactory</a> *  atk_no_op_object_factory_new        (void);</pre>
 <p>
-Creates an instance of an <a href="AtkObjectFactory.html" title="AtkObjectFactory"><span class="type">AtkObjectFactory</span></a> which generates primitive
+Creates an instance of an <a class="link" href="AtkObjectFactory.html" title="AtkObjectFactory"><span class="type">AtkObjectFactory</span></a> which generates primitive
 (non-functioning) <span class="type">AtkObjects</span>.</p>
 <p>
 </p>
 <div class="variablelist"><table border="0">
 <col align="left" valign="top">
 <tbody><tr>
-<td>
-<span class="term"><span class="emphasis"><em>Returns</em></span> :</span></td>
-<td> an instance of an <a href="AtkObjectFactory.html" title="AtkObjectFactory"><span class="type">AtkObjectFactory</span></a>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td> an instance of an <a class="link" href="AtkObjectFactory.html" title="AtkObjectFactory"><span class="type">AtkObjectFactory</span></a>
 </td>
 </tr></tbody>
 </table></div>

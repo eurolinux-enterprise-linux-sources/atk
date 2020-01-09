@@ -89,6 +89,7 @@ The AtkRelation structure should not be accessed directly.
   ATK_RELATION_PARENT_WINDOW_OF, 
   ATK_RELATION_DESCRIBED_BY,
   ATK_RELATION_DESCRIPTION_FOR,
+  ATK_RELATION_NODE_PARENT_OF,
   ATK_RELATION_LAST_DEFINED
 } AtkRelationType;
 </programlisting>
@@ -179,6 +180,11 @@ Describes the type of the relation</para>
 <varlistentry id="ATK-RELATION-DESCRIPTION-FOR--CAPS" role="constant">
 <term><literal>ATK_RELATION_DESCRIPTION_FOR</literal></term>
 <listitem><simpara> Indicates that an object provides descriptive information about another object; more verbose than ATK_RELATION_LABEL_FOR.
+</simpara></listitem>
+</varlistentry>
+<varlistentry id="ATK-RELATION-NODE-PARENT-OF--CAPS" role="constant">
+<term><literal>ATK_RELATION_NODE_PARENT_OF</literal></term>
+<listitem><simpara> Indicates an object is a cell in a treetable and is expanded to display other cells in the same column.
 </simpara></listitem>
 </varlistentry>
 <varlistentry id="ATK-RELATION-LAST-DEFINED--CAPS" role="constant">

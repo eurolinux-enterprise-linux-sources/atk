@@ -164,6 +164,7 @@ atk_relation_type_get_type (void)
       { ATK_RELATION_PARENT_WINDOW_OF, "ATK_RELATION_PARENT_WINDOW_OF", "parent-window-of" },
       { ATK_RELATION_DESCRIBED_BY, "ATK_RELATION_DESCRIBED_BY", "described-by" },
       { ATK_RELATION_DESCRIPTION_FOR, "ATK_RELATION_DESCRIPTION_FOR", "description-for" },
+      { ATK_RELATION_NODE_PARENT_OF, "ATK_RELATION_NODE_PARENT_OF", "node-parent-of" },
       { ATK_RELATION_LAST_DEFINED, "ATK_RELATION_LAST_DEFINED", "last-defined" },
       { 0, NULL, NULL }
     };

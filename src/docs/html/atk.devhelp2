@@ -442,6 +442,7 @@
     <keyword type="constant" name="ATK_RELATION_PARENT_WINDOW_OF" link="AtkRelation.html#ATK-RELATION-PARENT-WINDOW-OF--CAPS"/>
     <keyword type="constant" name="ATK_RELATION_DESCRIBED_BY" link="AtkRelation.html#ATK-RELATION-DESCRIBED-BY--CAPS"/>
     <keyword type="constant" name="ATK_RELATION_DESCRIPTION_FOR" link="AtkRelation.html#ATK-RELATION-DESCRIPTION-FOR--CAPS"/>
+    <keyword type="constant" name="ATK_RELATION_NODE_PARENT_OF" link="AtkRelation.html#ATK-RELATION-NODE-PARENT-OF--CAPS"/>
     <keyword type="constant" name="ATK_RELATION_LAST_DEFINED" link="AtkRelation.html#ATK-RELATION-LAST-DEFINED--CAPS"/>
     <keyword type="constant" name="ATK_STATE_INVALID" link="atk-AtkState.html#ATK-STATE-INVALID--CAPS"/>
     <keyword type="constant" name="ATK_STATE_ACTIVE" link="atk-AtkState.html#ATK-STATE-ACTIVE--CAPS"/>

@@ -34,7 +34,7 @@
 <title role="impl_interfaces.title">Implemented Interfaces</title>
 <para>
 AtkNoOpObject implements
- <link linkend="AtkImage">AtkImage</link>,  <link linkend="AtkTable">AtkTable</link>,  <link linkend="AtkSelection">AtkSelection</link>,  <link linkend="AtkText">AtkText</link>,  <link linkend="AtkAction">AtkAction</link>,  <link linkend="AtkComponent">AtkComponent</link>,  <link linkend="AtkDocument">AtkDocument</link>,  <link linkend="AtkEditableText">AtkEditableText</link>,  <link linkend="AtkHypertext">AtkHypertext</link> and  <link linkend="AtkValue">AtkValue</link>.</para>
+ <link linkend="AtkComponent">AtkComponent</link>,  <link linkend="AtkAction">AtkAction</link>,  <link linkend="AtkEditableText">AtkEditableText</link>,  <link linkend="AtkImage">AtkImage</link>,  <link linkend="AtkSelection">AtkSelection</link>,  <link linkend="AtkTable">AtkTable</link>,  <link linkend="AtkText">AtkText</link>,  <link linkend="AtkHypertext">AtkHypertext</link>,  <link linkend="AtkValue">AtkValue</link> and  <link linkend="AtkDocument">AtkDocument</link>.</para>
 </refsect1>
 
 

@@ -3,8 +3,8 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>AtkHyperlink</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.69.1">
-<link rel="start" href="index.html" title="ATK - Accessibility Toolkit">
+<meta name="generator" content="DocBook XSL Stylesheets V1.75.1">
+<link rel="home" href="index.html" title="ATK - Accessibility Toolkit">
 <link rel="up" href="atk.html" title="ATK Library">
 <link rel="prev" href="AtkGObjectAccessible.html" title="AtkGObjectAccessible">
 <link rel="next" href="atk-AtkHyperlinkImpl.html" title="AtkHyperlinkImpl">
@@ -42,7 +42,7 @@
                 <a href="#AtkHyperlink.signals" class="shortcut">Signals</a>
 </td></tr>
 </table>
-<div class="refentry" lang="en">
+<div class="refentry" title="AtkHyperlink">
 <a name="AtkHyperlink"></a><div class="titlepage"></div>
 <div class="refnamediv"><table width="100%"><tr>
 <td valign="top">
@@ -51,80 +51,52 @@
 </td>
 <td valign="top" align="right"></td>
 </tr></table></div>
-<div class="refsynopsisdiv">
+<div class="refsynopsisdiv" title="Synopsis">
 <a name="AtkHyperlink.synopsis"></a><h2>Synopsis</h2>
 <pre class="synopsis">
-                    <a href="AtkHyperlink.html#AtkHyperlink-struct" title="AtkHyperlink">AtkHyperlink</a>;
-enum                <a href="AtkHyperlink.html#AtkHyperlinkStateFlags" title="enum AtkHyperlinkStateFlags">AtkHyperlinkStateFlags</a>;
-<a
-href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"
->gchar</a>*              <a href="AtkHyperlink.html#atk-hyperlink-get-uri" title="atk_hyperlink_get_uri ()">atk_hyperlink_get_uri</a>               (<a href="AtkHyperlink.html" title="AtkHyperlink">AtkHyperlink</a> *link_,
-                                                         <a
-href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"
->gint</a> i);
-<a href="AtkObject.html" title="AtkObject">AtkObject</a>*          <a href="AtkHyperlink.html#atk-hyperlink-get-object" title="atk_hyperlink_get_object ()">atk_hyperlink_get_object</a>            (<a href="AtkHyperlink.html" title="AtkHyperlink">AtkHyperlink</a> *link_,
-                                                         <a
-href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"
->gint</a> i);
-<a
-href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"
->gint</a>                <a href="AtkHyperlink.html#atk-hyperlink-get-end-index" title="atk_hyperlink_get_end_index ()">atk_hyperlink_get_end_index</a>         (<a href="AtkHyperlink.html" title="AtkHyperlink">AtkHyperlink</a> *link_);
-<a
-href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"
->gint</a>                <a href="AtkHyperlink.html#atk-hyperlink-get-start-index" title="atk_hyperlink_get_start_index ()">atk_hyperlink_get_start_index</a>       (<a href="AtkHyperlink.html" title="AtkHyperlink">AtkHyperlink</a> *link_);
-<a
-href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"
->gboolean</a>            <a href="AtkHyperlink.html#atk-hyperlink-is-valid" title="atk_hyperlink_is_valid ()">atk_hyperlink_is_valid</a>              (<a href="AtkHyperlink.html" title="AtkHyperlink">AtkHyperlink</a> *link_);
-<a
-href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"
->gboolean</a>            <a href="AtkHyperlink.html#atk-hyperlink-is-inline" title="atk_hyperlink_is_inline ()">atk_hyperlink_is_inline</a>             (<a href="AtkHyperlink.html" title="AtkHyperlink">AtkHyperlink</a> *link_);
-<a
-href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"
->gint</a>                <a href="AtkHyperlink.html#atk-hyperlink-get-n-anchors" title="atk_hyperlink_get_n_anchors ()">atk_hyperlink_get_n_anchors</a>         (<a href="AtkHyperlink.html" title="AtkHyperlink">AtkHyperlink</a> *link_);
-<a
-href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"
->gboolean</a>            <a href="AtkHyperlink.html#atk-hyperlink-is-selected-link" title="atk_hyperlink_is_selected_link ()">atk_hyperlink_is_selected_link</a>      (<a href="AtkHyperlink.html" title="AtkHyperlink">AtkHyperlink</a> *link_);
+                    <a class="link" href="AtkHyperlink.html#AtkHyperlink-struct" title="AtkHyperlink">AtkHyperlink</a>;
+enum                <a class="link" href="AtkHyperlink.html#AtkHyperlinkStateFlags" title="enum AtkHyperlinkStateFlags">AtkHyperlinkStateFlags</a>;
+gchar*              <a class="link" href="AtkHyperlink.html#atk-hyperlink-get-uri" title="atk_hyperlink_get_uri ()">atk_hyperlink_get_uri</a>               (<a class="link" href="AtkHyperlink.html" title="AtkHyperlink">AtkHyperlink</a> *link_,
+                                                         gint i);
+<a class="link" href="AtkObject.html" title="AtkObject">AtkObject</a>*          <a class="link" href="AtkHyperlink.html#atk-hyperlink-get-object" title="atk_hyperlink_get_object ()">atk_hyperlink_get_object</a>            (<a class="link" href="AtkHyperlink.html" title="AtkHyperlink">AtkHyperlink</a> *link_,
+                                                         gint i);
+gint                <a class="link" href="AtkHyperlink.html#atk-hyperlink-get-end-index" title="atk_hyperlink_get_end_index ()">atk_hyperlink_get_end_index</a>         (<a class="link" href="AtkHyperlink.html" title="AtkHyperlink">AtkHyperlink</a> *link_);
+gint                <a class="link" href="AtkHyperlink.html#atk-hyperlink-get-start-index" title="atk_hyperlink_get_start_index ()">atk_hyperlink_get_start_index</a>       (<a class="link" href="AtkHyperlink.html" title="AtkHyperlink">AtkHyperlink</a> *link_);
+gboolean            <a class="link" href="AtkHyperlink.html#atk-hyperlink-is-valid" title="atk_hyperlink_is_valid ()">atk_hyperlink_is_valid</a>              (<a class="link" href="AtkHyperlink.html" title="AtkHyperlink">AtkHyperlink</a> *link_);
+gboolean            <a class="link" href="AtkHyperlink.html#atk-hyperlink-is-inline" title="atk_hyperlink_is_inline ()">atk_hyperlink_is_inline</a>             (<a class="link" href="AtkHyperlink.html" title="AtkHyperlink">AtkHyperlink</a> *link_);
+gint                <a class="link" href="AtkHyperlink.html#atk-hyperlink-get-n-anchors" title="atk_hyperlink_get_n_anchors ()">atk_hyperlink_get_n_anchors</a>         (<a class="link" href="AtkHyperlink.html" title="AtkHyperlink">AtkHyperlink</a> *link_);
+gboolean            <a class="link" href="AtkHyperlink.html#atk-hyperlink-is-selected-link" title="atk_hyperlink_is_selected_link ()">atk_hyperlink_is_selected_link</a>      (<a class="link" href="AtkHyperlink.html" title="AtkHyperlink">AtkHyperlink</a> *link_);
 </pre>
 </div>
-<div class="refsect1" lang="en">
+<div class="refsect1" title="Object Hierarchy">
 <a name="AtkHyperlink.object-hierarchy"></a><h2>Object Hierarchy</h2>
 <pre class="synopsis">
-  <a
-href="http://library.gnome.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#GObject"
->GObject</a>
+  GObject
    +----AtkHyperlink
 </pre>
 </div>
-<div class="refsect1" lang="en">
+<div class="refsect1" title="Implemented Interfaces">
 <a name="AtkHyperlink.implemented-interfaces"></a><h2>Implemented Interfaces</h2>
 <p>
 AtkHyperlink implements
- <a href="AtkAction.html" title="AtkAction">AtkAction</a>.</p>
+ <a class="link" href="AtkAction.html" title="AtkAction">AtkAction</a>.</p>
 </div>
-<div class="refsect1" lang="en">
+<div class="refsect1" title="Properties">
 <a name="AtkHyperlink.properties"></a><h2>Properties</h2>
 <pre class="synopsis">
-  "<a href="AtkHyperlink.html#AtkHyperlink--end-index" title='The "end-index" property'>end-index</a>"                <a
-href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"
->gint</a>                  : Read
-  "<a href="AtkHyperlink.html#AtkHyperlink--number-of-anchors" title='The "number-of-anchors" property'>number-of-anchors</a>"        <a
-href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"
->gint</a>                  : Read
-  "<a href="AtkHyperlink.html#AtkHyperlink--selected-link" title='The "selected-link" property'>selected-link</a>"            <a
-href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"
->gboolean</a>              : Read
-  "<a href="AtkHyperlink.html#AtkHyperlink--start-index" title='The "start-index" property'>start-index</a>"              <a
-href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"
->gint</a>                  : Read
+  "<a class="link" href="AtkHyperlink.html#AtkHyperlink--end-index" title='The "end-index" property'>end-index</a>"                gint                  : Read
+  "<a class="link" href="AtkHyperlink.html#AtkHyperlink--number-of-anchors" title='The "number-of-anchors" property'>number-of-anchors</a>"        gint                  : Read
+  "<a class="link" href="AtkHyperlink.html#AtkHyperlink--selected-link" title='The "selected-link" property'>selected-link</a>"            gboolean              : Read
+  "<a class="link" href="AtkHyperlink.html#AtkHyperlink--start-index" title='The "start-index" property'>start-index</a>"              gint                  : Read
 </pre>
 </div>
-<div class="refsect1" lang="en">
+<div class="refsect1" title="Signals">
 <a name="AtkHyperlink.signals"></a><h2>Signals</h2>
 <pre class="synopsis">
-  "<a href="AtkHyperlink.html#AtkHyperlink-link-activated" title='The "link-activated" signal'>link-activated</a>"                                 : Run Last
+  "<a class="link" href="AtkHyperlink.html#AtkHyperlink-link-activated" title='The "link-activated" signal'>link-activated</a>"                                 : Run Last
 </pre>
 </div>
-<div class="refsect1" lang="en">
+<div class="refsect1" title="Description">
 <a name="AtkHyperlink.description"></a><h2>Description</h2>
 <p>
 An ATK object which encapsulates a link or set of links
@@ -134,9 +106,9 @@ to refer to inline embedded content, since it allows specification of a start
 and end offset within the host AtkHypertext object.
 </p>
 </div>
-<div class="refsect1" lang="en">
+<div class="refsect1" title="Details">
 <a name="AtkHyperlink.details"></a><h2>Details</h2>
-<div class="refsect2" lang="en">
+<div class="refsect2" title="AtkHyperlink">
 <a name="AtkHyperlink-struct"></a><h3>AtkHyperlink</h3>
 <pre class="programlisting">typedef struct _AtkHyperlink AtkHyperlink;</pre>
 <p>
@@ -144,7 +116,7 @@ The AtkHyperlink structure should not be accessed directly.
 </p>
 </div>
 <hr>
-<div class="refsect2" lang="en">
+<div class="refsect2" title="enum AtkHyperlinkStateFlags">
 <a name="AtkHyperlinkStateFlags"></a><h3>enum AtkHyperlinkStateFlags</h3>
 <pre class="programlisting">typedef enum 
 {
@@ -158,22 +130,17 @@ Describes the type of link</p>
 <div class="variablelist"><table border="0">
 <col align="left" valign="top">
 <tbody><tr>
-<td>
-<a name="ATK-HYPERLINK-IS-INLINE--CAPS"></a><span class="term"><code class="literal">ATK_HYPERLINK_IS_INLINE</code></span></td>
+<td><p><a name="ATK-HYPERLINK-IS-INLINE--CAPS"></a><span class="term"><code class="literal">ATK_HYPERLINK_IS_INLINE</code></span></p></td>
 <td> Link is inline
 </td>
 </tr></tbody>
 </table></div>
 </div>
 <hr>
-<div class="refsect2" lang="en">
+<div class="refsect2" title="atk_hyperlink_get_uri ()">
 <a name="atk-hyperlink-get-uri"></a><h3>atk_hyperlink_get_uri ()</h3>
-<pre class="programlisting"><a
-href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"
->gchar</a>*              atk_hyperlink_get_uri               (<a href="AtkHyperlink.html" title="AtkHyperlink">AtkHyperlink</a> *link_,
-                                                         <a
-href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"
->gint</a> i);</pre>
+<pre class="programlisting">gchar*              atk_hyperlink_get_uri               (<a class="link" href="AtkHyperlink.html" title="AtkHyperlink">AtkHyperlink</a> *link_,
+                                                         gint i);</pre>
 <p>
 Get a the URI associated with the anchor specified 
 by <em class="parameter"><code>i</code></em> of <em class="parameter"><code>link_</code></em>. 
@@ -186,20 +153,17 @@ Multiple anchors are primarily used by client-side image maps.</p>
 <col align="left" valign="top">
 <tbody>
 <tr>
-<td>
-<span class="term"><em class="parameter"><code>link_</code></em> :</span></td>
-<td> an <a href="AtkHyperlink.html" title="AtkHyperlink"><span class="type">AtkHyperlink</span></a>
+<td><p><span class="term"><em class="parameter"><code>link_</code></em> :</span></p></td>
+<td> an <a class="link" href="AtkHyperlink.html" title="AtkHyperlink"><span class="type">AtkHyperlink</span></a>
 </td>
 </tr>
 <tr>
-<td>
-<span class="term"><em class="parameter"><code>i</code></em> :</span></td>
+<td><p><span class="term"><em class="parameter"><code>i</code></em> :</span></p></td>
 <td> a (zero-index) integer specifying the desired anchor
 </td>
 </tr>
 <tr>
-<td>
-<span class="term"><span class="emphasis"><em>Returns</em></span> :</span></td>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
 <td> a string specifying the URI 
 </td>
 </tr>
@@ -207,16 +171,14 @@ Multiple anchors are primarily used by client-side image maps.</p>
 </table></div>
 </div>
 <hr>
-<div class="refsect2" lang="en">
+<div class="refsect2" title="atk_hyperlink_get_object ()">
 <a name="atk-hyperlink-get-object"></a><h3>atk_hyperlink_get_object ()</h3>
-<pre class="programlisting"><a href="AtkObject.html" title="AtkObject">AtkObject</a>*          atk_hyperlink_get_object            (<a href="AtkHyperlink.html" title="AtkHyperlink">AtkHyperlink</a> *link_,
-                                                         <a
-href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"
->gint</a> i);</pre>
+<pre class="programlisting"><a class="link" href="AtkObject.html" title="AtkObject">AtkObject</a>*          atk_hyperlink_get_object            (<a class="link" href="AtkHyperlink.html" title="AtkHyperlink">AtkHyperlink</a> *link_,
+                                                         gint i);</pre>
 <p>
 Returns the item associated with this hyperlinks nth anchor.
-For instance, the returned <a href="AtkObject.html" title="AtkObject"><span class="type">AtkObject</span></a> will implement <a href="AtkText.html" title="AtkText"><span class="type">AtkText</span></a>
-if <em class="parameter"><code>link_</code></em> is a text hyperlink, <a href="AtkImage.html" title="AtkImage"><span class="type">AtkImage</span></a> if <em class="parameter"><code>link_</code></em> is an image
+For instance, the returned <a class="link" href="AtkObject.html" title="AtkObject"><span class="type">AtkObject</span></a> will implement <a class="link" href="AtkText.html" title="AtkText"><span class="type">AtkText</span></a>
+if <em class="parameter"><code>link_</code></em> is a text hyperlink, <a class="link" href="AtkImage.html" title="AtkImage"><span class="type">AtkImage</span></a> if <em class="parameter"><code>link_</code></em> is an image
 hyperlink etc. 
 </p>
 <p>
@@ -227,32 +189,27 @@ Multiple anchors are primarily used by client-side image maps.</p>
 <col align="left" valign="top">
 <tbody>
 <tr>
-<td>
-<span class="term"><em class="parameter"><code>link_</code></em> :</span></td>
-<td> an <a href="AtkHyperlink.html" title="AtkHyperlink"><span class="type">AtkHyperlink</span></a>
+<td><p><span class="term"><em class="parameter"><code>link_</code></em> :</span></p></td>
+<td> an <a class="link" href="AtkHyperlink.html" title="AtkHyperlink"><span class="type">AtkHyperlink</span></a>
 </td>
 </tr>
 <tr>
-<td>
-<span class="term"><em class="parameter"><code>i</code></em> :</span></td>
+<td><p><span class="term"><em class="parameter"><code>i</code></em> :</span></p></td>
 <td> a (zero-index) integer specifying the desired anchor
 </td>
 </tr>
 <tr>
-<td>
-<span class="term"><span class="emphasis"><em>Returns</em></span> :</span></td>
-<td> an <a href="AtkObject.html" title="AtkObject"><span class="type">AtkObject</span></a> associated with this hyperlinks i-th anchor
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td> an <a class="link" href="AtkObject.html" title="AtkObject"><span class="type">AtkObject</span></a> associated with this hyperlinks i-th anchor
 </td>
 </tr>
 </tbody>
 </table></div>
 </div>
 <hr>
-<div class="refsect2" lang="en">
+<div class="refsect2" title="atk_hyperlink_get_end_index ()">
 <a name="atk-hyperlink-get-end-index"></a><h3>atk_hyperlink_get_end_index ()</h3>
-<pre class="programlisting"><a
-href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"
->gint</a>                atk_hyperlink_get_end_index         (<a href="AtkHyperlink.html" title="AtkHyperlink">AtkHyperlink</a> *link_);</pre>
+<pre class="programlisting">gint                atk_hyperlink_get_end_index         (<a class="link" href="AtkHyperlink.html" title="AtkHyperlink">AtkHyperlink</a> *link_);</pre>
 <p>
 Gets the index with the hypertext document at which this link ends.</p>
 <p>
@@ -261,14 +218,12 @@ Gets the index with the hypertext document at which this link ends.</p>
 <col align="left" valign="top">
 <tbody>
 <tr>
-<td>
-<span class="term"><em class="parameter"><code>link_</code></em> :</span></td>
-<td> an <a href="AtkHyperlink.html" title="AtkHyperlink"><span class="type">AtkHyperlink</span></a>
+<td><p><span class="term"><em class="parameter"><code>link_</code></em> :</span></p></td>
+<td> an <a class="link" href="AtkHyperlink.html" title="AtkHyperlink"><span class="type">AtkHyperlink</span></a>
 </td>
 </tr>
 <tr>
-<td>
-<span class="term"><span class="emphasis"><em>Returns</em></span> :</span></td>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
 <td> the index with the hypertext document at which this link ends
 </td>
 </tr>
@@ -276,11 +231,9 @@ Gets the index with the hypertext document at which this link ends.</p>
 </table></div>
 </div>
 <hr>
-<div class="refsect2" lang="en">
+<div class="refsect2" title="atk_hyperlink_get_start_index ()">
 <a name="atk-hyperlink-get-start-index"></a><h3>atk_hyperlink_get_start_index ()</h3>
-<pre class="programlisting"><a
-href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"
->gint</a>                atk_hyperlink_get_start_index       (<a href="AtkHyperlink.html" title="AtkHyperlink">AtkHyperlink</a> *link_);</pre>
+<pre class="programlisting">gint                atk_hyperlink_get_start_index       (<a class="link" href="AtkHyperlink.html" title="AtkHyperlink">AtkHyperlink</a> *link_);</pre>
 <p>
 Gets the index with the hypertext document at which this link begins.</p>
 <p>
@@ -289,14 +242,12 @@ Gets the index with the hypertext document at which this link begins.</p>
 <col align="left" valign="top">
 <tbody>
 <tr>
-<td>
-<span class="term"><em class="parameter"><code>link_</code></em> :</span></td>
-<td> an <a href="AtkHyperlink.html" title="AtkHyperlink"><span class="type">AtkHyperlink</span></a>
+<td><p><span class="term"><em class="parameter"><code>link_</code></em> :</span></p></td>
+<td> an <a class="link" href="AtkHyperlink.html" title="AtkHyperlink"><span class="type">AtkHyperlink</span></a>
 </td>
 </tr>
 <tr>
-<td>
-<span class="term"><span class="emphasis"><em>Returns</em></span> :</span></td>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
 <td> the index with the hypertext document at which this link begins
 </td>
 </tr>
@@ -304,33 +255,25 @@ Gets the index with the hypertext document at which this link begins.</p>
 </table></div>
 </div>
 <hr>
-<div class="refsect2" lang="en">
+<div class="refsect2" title="atk_hyperlink_is_valid ()">
 <a name="atk-hyperlink-is-valid"></a><h3>atk_hyperlink_is_valid ()</h3>
-<pre class="programlisting"><a
-href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"
->gboolean</a>            atk_hyperlink_is_valid              (<a href="AtkHyperlink.html" title="AtkHyperlink">AtkHyperlink</a> *link_);</pre>
+<pre class="programlisting">gboolean            atk_hyperlink_is_valid              (<a class="link" href="AtkHyperlink.html" title="AtkHyperlink">AtkHyperlink</a> *link_);</pre>
 <p>
 Since the document that a link is associated with may have changed
-this method returns <a
-href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#TRUE--CAPS"
-><code class="literal">TRUE</code></a> if the link is still valid (with
-respect to the document it references) and <a
-href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#FALSE--CAPS"
-><code class="literal">FALSE</code></a> otherwise.</p>
+this method returns <code class="literal">TRUE</code> if the link is still valid (with
+respect to the document it references) and <code class="literal">FALSE</code> otherwise.</p>
 <p>
 </p>
 <div class="variablelist"><table border="0">
 <col align="left" valign="top">
 <tbody>
 <tr>
-<td>
-<span class="term"><em class="parameter"><code>link_</code></em> :</span></td>
-<td> an <a href="AtkHyperlink.html" title="AtkHyperlink"><span class="type">AtkHyperlink</span></a>
+<td><p><span class="term"><em class="parameter"><code>link_</code></em> :</span></p></td>
+<td> an <a class="link" href="AtkHyperlink.html" title="AtkHyperlink"><span class="type">AtkHyperlink</span></a>
 </td>
 </tr>
 <tr>
-<td>
-<span class="term"><span class="emphasis"><em>Returns</em></span> :</span></td>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
 <td> whether or not this link is still valid
 </td>
 </tr>
@@ -338,20 +281,14 @@ href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#FAL
 </table></div>
 </div>
 <hr>
-<div class="refsect2" lang="en">
+<div class="refsect2" title="atk_hyperlink_is_inline ()">
 <a name="atk-hyperlink-is-inline"></a><h3>atk_hyperlink_is_inline ()</h3>
-<pre class="programlisting"><a
-href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"
->gboolean</a>            atk_hyperlink_is_inline             (<a href="AtkHyperlink.html" title="AtkHyperlink">AtkHyperlink</a> *link_);</pre>
+<pre class="programlisting">gboolean            atk_hyperlink_is_inline             (<a class="link" href="AtkHyperlink.html" title="AtkHyperlink">AtkHyperlink</a> *link_);</pre>
 <p>
 Indicates whether the link currently displays some or all of its
           content inline.  Ordinary HTML links will usually return
-          <a
-href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#FALSE--CAPS"
-><code class="literal">FALSE</code></a>, but an inline &amp;lt;src&amp;gt; HTML element will return
-          <a
-href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#TRUE--CAPS"
-><code class="literal">TRUE</code></a>.
+          <code class="literal">FALSE</code>, but an inline &amp;lt;src&amp;gt; HTML element will return
+          <code class="literal">TRUE</code>.
 a *</p>
 <p>
 </p>
@@ -359,14 +296,12 @@ a *</p>
 <col align="left" valign="top">
 <tbody>
 <tr>
-<td>
-<span class="term"><em class="parameter"><code>link_</code></em> :</span></td>
-<td> an <a href="AtkHyperlink.html" title="AtkHyperlink"><span class="type">AtkHyperlink</span></a>
+<td><p><span class="term"><em class="parameter"><code>link_</code></em> :</span></p></td>
+<td> an <a class="link" href="AtkHyperlink.html" title="AtkHyperlink"><span class="type">AtkHyperlink</span></a>
 </td>
 </tr>
 <tr>
-<td>
-<span class="term"><span class="emphasis"><em>Returns</em></span> :</span></td>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
 <td> whether or not this link displays its content inline.
 
 </td>
@@ -375,11 +310,9 @@ a *</p>
 </table></div>
 </div>
 <hr>
-<div class="refsect2" lang="en">
+<div class="refsect2" title="atk_hyperlink_get_n_anchors ()">
 <a name="atk-hyperlink-get-n-anchors"></a><h3>atk_hyperlink_get_n_anchors ()</h3>
-<pre class="programlisting"><a
-href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"
->gint</a>                atk_hyperlink_get_n_anchors         (<a href="AtkHyperlink.html" title="AtkHyperlink">AtkHyperlink</a> *link_);</pre>
+<pre class="programlisting">gint                atk_hyperlink_get_n_anchors         (<a class="link" href="AtkHyperlink.html" title="AtkHyperlink">AtkHyperlink</a> *link_);</pre>
 <p>
 Gets the number of anchors associated with this hyperlink.</p>
 <p>
@@ -388,14 +321,12 @@ Gets the number of anchors associated with this hyperlink.</p>
 <col align="left" valign="top">
 <tbody>
 <tr>
-<td>
-<span class="term"><em class="parameter"><code>link_</code></em> :</span></td>
-<td> an <a href="AtkHyperlink.html" title="AtkHyperlink"><span class="type">AtkHyperlink</span></a>
+<td><p><span class="term"><em class="parameter"><code>link_</code></em> :</span></p></td>
+<td> an <a class="link" href="AtkHyperlink.html" title="AtkHyperlink"><span class="type">AtkHyperlink</span></a>
 </td>
 </tr>
 <tr>
-<td>
-<span class="term"><span class="emphasis"><em>Returns</em></span> :</span></td>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
 <td> the number of anchors associated with this hyperlink
 </td>
 </tr>
@@ -403,12 +334,10 @@ Gets the number of anchors associated with this hyperlink.</p>
 </table></div>
 </div>
 <hr>
-<div class="refsect2" lang="en">
+<div class="refsect2" title="atk_hyperlink_is_selected_link ()">
 <a name="atk-hyperlink-is-selected-link"></a><h3>atk_hyperlink_is_selected_link ()</h3>
-<pre class="programlisting"><a
-href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"
->gboolean</a>            atk_hyperlink_is_selected_link      (<a href="AtkHyperlink.html" title="AtkHyperlink">AtkHyperlink</a> *link_);</pre>
-<div class="warning" style="margin-left: 0.5in; margin-right: 0.5in;">
+<pre class="programlisting">gboolean            atk_hyperlink_is_selected_link      (<a class="link" href="AtkHyperlink.html" title="AtkHyperlink">AtkHyperlink</a> *link_);</pre>
+<div class="warning" title="Warning" style="margin-left: 0.5in; margin-right: 0.5in;">
 <h3 class="title">Warning</h3>
 <p><code class="literal">atk_hyperlink_is_selected_link</code> is deprecated and should not be used in newly-written code. Please use ATK_STATE_SELECTED to indicate when a hyperlink within a Hypertext container is selected.</p>
 </div>
@@ -420,14 +349,12 @@ Determines whether this AtkHyperlink is selected</p>
 <col align="left" valign="top">
 <tbody>
 <tr>
-<td>
-<span class="term"><em class="parameter"><code>link_</code></em> :</span></td>
-<td> an <a href="AtkHyperlink.html" title="AtkHyperlink"><span class="type">AtkHyperlink</span></a>
+<td><p><span class="term"><em class="parameter"><code>link_</code></em> :</span></p></td>
+<td> an <a class="link" href="AtkHyperlink.html" title="AtkHyperlink"><span class="type">AtkHyperlink</span></a>
 </td>
 </tr>
 <tr>
-<td>
-<span class="term"><span class="emphasis"><em>Returns</em></span> :</span></td>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
 <td> True is the AtkHyperlink is selected, False otherwise
 </td>
 </tr>
@@ -436,55 +363,45 @@ Determines whether this AtkHyperlink is selected</p>
 <p class="since">Since 1.4</p>
 </div>
 </div>
-<div class="refsect1" lang="en">
+<div class="refsect1" title="Property Details">
 <a name="AtkHyperlink.property-details"></a><h2>Property Details</h2>
-<div class="refsect2" lang="en">
+<div class="refsect2" title='The "end-index" property'>
 <a name="AtkHyperlink--end-index"></a><h3>The <code class="literal">"end-index"</code> property</h3>
-<pre class="programlisting">  "end-index"                <a
-href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"
->gint</a>                  : Read</pre>
+<pre class="programlisting">  "end-index"                gint                  : Read</pre>
 <p>The end index of the AtkHyperlink object.</p>
 <p>Allowed values: &gt;= 0</p>
 <p>Default value: 0</p>
 </div>
 <hr>
-<div class="refsect2" lang="en">
+<div class="refsect2" title='The "number-of-anchors" property'>
 <a name="AtkHyperlink--number-of-anchors"></a><h3>The <code class="literal">"number-of-anchors"</code> property</h3>
-<pre class="programlisting">  "number-of-anchors"        <a
-href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"
->gint</a>                  : Read</pre>
+<pre class="programlisting">  "number-of-anchors"        gint                  : Read</pre>
 <p>The number of anchors associated with the AtkHyperlink object.</p>
 <p>Allowed values: &gt;= 0</p>
 <p>Default value: 0</p>
 </div>
 <hr>
-<div class="refsect2" lang="en">
+<div class="refsect2" title='The "selected-link" property'>
 <a name="AtkHyperlink--selected-link"></a><h3>The <code class="literal">"selected-link"</code> property</h3>
-<pre class="programlisting">  "selected-link"            <a
-href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"
->gboolean</a>              : Read</pre>
+<pre class="programlisting">  "selected-link"            gboolean              : Read</pre>
 <p>Specifies whether the AtkHyperlink object is selected.</p>
 <p>Default value: FALSE</p>
 </div>
 <hr>
-<div class="refsect2" lang="en">
+<div class="refsect2" title='The "start-index" property'>
 <a name="AtkHyperlink--start-index"></a><h3>The <code class="literal">"start-index"</code> property</h3>
-<pre class="programlisting">  "start-index"              <a
-href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"
->gint</a>                  : Read</pre>
+<pre class="programlisting">  "start-index"              gint                  : Read</pre>
 <p>The start index of the AtkHyperlink object.</p>
 <p>Allowed values: &gt;= 0</p>
 <p>Default value: 0</p>
 </div>
 </div>
-<div class="refsect1" lang="en">
+<div class="refsect1" title="Signal Details">
 <a name="AtkHyperlink.signal-details"></a><h2>Signal Details</h2>
-<div class="refsect2" lang="en">
+<div class="refsect2" title='The "link-activated" signal'>
 <a name="AtkHyperlink-link-activated"></a><h3>The <code class="literal">"link-activated"</code> signal</h3>
-<pre class="programlisting">void                user_function                      (<a href="AtkHyperlink.html" title="AtkHyperlink">AtkHyperlink</a> *atkhyperlink,
-                                                        <a
-href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"
->gpointer</a>      user_data)         : Run Last</pre>
+<pre class="programlisting">void                user_function                      (<a class="link" href="AtkHyperlink.html" title="AtkHyperlink">AtkHyperlink</a> *atkhyperlink,
+                                                        gpointer      user_data)         : Run Last</pre>
 <p>
 The signal link-activated is emitted when a link is activated.
 </p>
@@ -492,14 +409,12 @@ The signal link-activated is emitted when a link is activated.
 <col align="left" valign="top">
 <tbody>
 <tr>
-<td>
-<span class="term"><em class="parameter"><code>atkhyperlink</code></em> :</span></td>
+<td><p><span class="term"><em class="parameter"><code>atkhyperlink</code></em> :</span></p></td>
 <td>the object which received the signal.
 </td>
 </tr>
 <tr>
-<td>
-<span class="term"><em class="parameter"><code>user_data</code></em> :</span></td>
+<td><p><span class="term"><em class="parameter"><code>user_data</code></em> :</span></p></td>
 <td>user data set when the signal handler was connected.</td>
 </tr>
 </tbody>

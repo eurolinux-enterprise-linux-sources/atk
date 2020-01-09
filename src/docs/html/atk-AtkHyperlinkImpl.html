@@ -3,8 +3,8 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>AtkHyperlinkImpl</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.69.1">
-<link rel="start" href="index.html" title="ATK - Accessibility Toolkit">
+<meta name="generator" content="DocBook XSL Stylesheets V1.75.1">
+<link rel="home" href="index.html" title="ATK - Accessibility Toolkit">
 <link rel="up" href="atk.html" title="ATK Library">
 <link rel="prev" href="AtkHyperlink.html" title="AtkHyperlink">
 <link rel="next" href="AtkHypertext.html" title="AtkHypertext">
@@ -34,7 +34,7 @@
                 <a href="#atk-AtkHyperlinkImpl.description" class="shortcut">Description</a>
 </td></tr>
 </table>
-<div class="refentry" lang="en">
+<div class="refentry" title="AtkHyperlinkImpl">
 <a name="atk-AtkHyperlinkImpl"></a><div class="titlepage"></div>
 <div class="refnamediv"><table width="100%"><tr>
 <td valign="top">
@@ -44,14 +44,14 @@ AtkObject may be obtained.</p>
 </td>
 <td valign="top" align="right"></td>
 </tr></table></div>
-<div class="refsynopsisdiv">
+<div class="refsynopsisdiv" title="Synopsis">
 <a name="atk-AtkHyperlinkImpl.synopsis"></a><h2>Synopsis</h2>
 <pre class="synopsis">
-                    <a href="atk-AtkHyperlinkImpl.html#AtkHyperlinkImpl" title="AtkHyperlinkImpl">AtkHyperlinkImpl</a>;
-<a href="AtkHyperlink.html" title="AtkHyperlink">AtkHyperlink</a> *      <a href="atk-AtkHyperlinkImpl.html#atk-hyperlink-impl-get-hyperlink" title="atk_hyperlink_impl_get_hyperlink ()">atk_hyperlink_impl_get_hyperlink</a>    (<a href="atk-AtkHyperlinkImpl.html#AtkHyperlinkImpl" title="AtkHyperlinkImpl">AtkHyperlinkImpl</a> *obj);
+                    <a class="link" href="atk-AtkHyperlinkImpl.html#AtkHyperlinkImpl" title="AtkHyperlinkImpl">AtkHyperlinkImpl</a>;
+<a class="link" href="AtkHyperlink.html" title="AtkHyperlink">AtkHyperlink</a> *      <a class="link" href="atk-AtkHyperlinkImpl.html#atk-hyperlink-impl-get-hyperlink" title="atk_hyperlink_impl_get_hyperlink ()">atk_hyperlink_impl_get_hyperlink</a>    (<a class="link" href="atk-AtkHyperlinkImpl.html#AtkHyperlinkImpl" title="AtkHyperlinkImpl">AtkHyperlinkImpl</a> *obj);
 </pre>
 </div>
-<div class="refsect1" lang="en">
+<div class="refsect1" title="Description">
 <a name="atk-AtkHyperlinkImpl.description"></a><h2>Description</h2>
 <p>
 AtkHyperlinkImpl allows AtkObjects to
@@ -70,9 +70,9 @@ in addition to their being obtainable via AtkHypertext:getLink
 followed by AtkHyperlink:getObject.
 </p>
 </div>
-<div class="refsect1" lang="en">
+<div class="refsect1" title="Details">
 <a name="atk-AtkHyperlinkImpl.details"></a><h2>Details</h2>
-<div class="refsect2" lang="en">
+<div class="refsect2" title="AtkHyperlinkImpl">
 <a name="AtkHyperlinkImpl"></a><h3>AtkHyperlinkImpl</h3>
 <pre class="programlisting">typedef struct _AtkHyperlinkImpl AtkHyperlinkImpl;</pre>
 <p>
@@ -84,9 +84,9 @@ queried.
 </p>
 </div>
 <hr>
-<div class="refsect2" lang="en">
+<div class="refsect2" title="atk_hyperlink_impl_get_hyperlink ()">
 <a name="atk-hyperlink-impl-get-hyperlink"></a><h3>atk_hyperlink_impl_get_hyperlink ()</h3>
-<pre class="programlisting"><a href="AtkHyperlink.html" title="AtkHyperlink">AtkHyperlink</a> *      atk_hyperlink_impl_get_hyperlink    (<a href="atk-AtkHyperlinkImpl.html#AtkHyperlinkImpl" title="AtkHyperlinkImpl">AtkHyperlinkImpl</a> *obj);</pre>
+<pre class="programlisting"><a class="link" href="AtkHyperlink.html" title="AtkHyperlink">AtkHyperlink</a> *      atk_hyperlink_impl_get_hyperlink    (<a class="link" href="atk-AtkHyperlinkImpl.html#AtkHyperlinkImpl" title="AtkHyperlinkImpl">AtkHyperlinkImpl</a> *obj);</pre>
 <p>
 Gets the hyperlink associated with this object.</p>
 <p>
@@ -95,14 +95,12 @@ Gets the hyperlink associated with this object.</p>
 <col align="left" valign="top">
 <tbody>
 <tr>
-<td>
-<span class="term"><em class="parameter"><code>obj</code></em> :</span></td>
+<td><p><span class="term"><em class="parameter"><code>obj</code></em> :</span></p></td>
 <td> a GObject instance that implements AtkHyperlinkImplIface
 </td>
 </tr>
 <tr>
-<td>
-<span class="term"><span class="emphasis"><em>Returns</em></span> :</span></td>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
 <td>an AtkHyperlink object which points to this implementing AtkObject.
 
 </td>

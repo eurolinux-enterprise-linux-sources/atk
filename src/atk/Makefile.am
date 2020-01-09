@@ -2,6 +2,11 @@
 # which are more like other make's VPATH.
 GPATH = $(srcdir)
 
+include $(INTROSPECTION_MAKEFILE)
+INTROSPECTION_GIRS =
+
+CLEANFILES =
+
 if PLATFORM_WIN32
 no_undefined = -no-undefined
 else
@@ -21,7 +26,9 @@ lib_LTLIBRARIES = libatk-1.0.la
 libatk_1_0_la_LDFLAGS = 			\
 	-version-info $(LT_VERSION_INFO)	\
 	$(no_undefined)
-libatk_1_0_la_LIBADD = $(DEP_LIBS)
+libatk_1_0_la_LIBADD = \
+       $(DEP_LIBS)     \
+       $(INTLLIBS)
 
 libatk_1_0_la_SOURCES = 	\
 	atkaction.c		\
@@ -37,10 +44,12 @@ libatk_1_0_la_SOURCES = 	\
 	atknoopobjectfactory.c	\
 	atkobject.c		\
 	atkobjectfactory.c	\
+	atkplug.c		\
 	atkregistry.c		\
 	atkrelation.c		\
 	atkrelationset.c	\
 	atkselection.c		\
+	atksocket.c		\
 	atkstate.c		\
 	atkstateset.c		\
 	atkstreamablecontent.c	\
@@ -67,12 +76,14 @@ atk_headers = \
         atknoopobjectfactory.h	\
         atkobject.h		\
 	atkobjectfactory.h	\
+        atkplug.h		\
         atkimage.h		\
         atkregistry.h		\
         atkrelation.h		\
         atkrelationtype.h	\
         atkrelationset.h	\
         atkselection.h		\
+        atksocket.h		\
         atkstate.h		\
         atkstateset.h		\
         atkstreamablecontent.h	\
@@ -133,6 +144,28 @@ s-enum-types-c: @REBUILD@ $(atk_headers) Makefile
 	&& (cmp -s tmp-atk-enum-types.c atk-enum-types.c || cp tmp-atk-enum-types.c atk-enum-types.c ) \
 	&& rm -f tmp-atk-enum-types.c \
 	&& echo timestamp > $(@F)
+
+
+if HAVE_INTROSPECTION
+introspection_sources = \
+    $(libatkinclude_HEADERS) \
+    $(libatk_1_0_la_SOURCES)
+
+Atk-1.0.gir: libatk-1.0.la
+Atk_1_0_gir_INCLUDES = GObject-2.0
+Atk_1_0_gir_CFLAGS = $(INCLUDES)
+Atk_1_0_gir_LIBS = libatk-1.0.la
+Atk_1_0_gir_FILES = $(addprefix $(srcdir)/, $(introspection_sources))
+INTROSPECTION_GIRS += Atk-1.0.gir
+
+girdir = $(datadir)/gir-1.0
+dist_gir_DATA = $(INTROSPECTION_GIRS)
+
+typelibsdir = $(libdir)/girepository-1.0
+typelibs_DATA = $(INTROSPECTION_GIRS:.gir=.typelib)
+
+CLEANFILES += $(dist_gir_DATA) $(typelibs_DATA)
+endif
 
 # ---------- Win32 stuff ----------
 

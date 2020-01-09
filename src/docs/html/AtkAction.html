@@ -3,8 +3,8 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>AtkAction</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.69.1">
-<link rel="start" href="index.html" title="ATK - Accessibility Toolkit">
+<meta name="generator" content="DocBook XSL Stylesheets V1.75.1">
+<link rel="home" href="index.html" title="ATK - Accessibility Toolkit">
 <link rel="up" href="atk.html" title="ATK Library">
 <link rel="prev" href="atk.html" title="ATK Library">
 <link rel="next" href="AtkComponent.html" title="AtkComponent">
@@ -38,7 +38,7 @@
                 <a href="#AtkAction.implementations" class="shortcut">Known Implementations</a>
 </td></tr>
 </table>
-<div class="refentry" lang="en">
+<div class="refentry" title="AtkAction">
 <a name="AtkAction"></a><div class="titlepage"></div>
 <div class="refnamediv"><table width="100%"><tr>
 <td valign="top">
@@ -48,83 +48,55 @@ activate/interact with,</p>
 </td>
 <td valign="top" align="right"></td>
 </tr></table></div>
-<div class="refsynopsisdiv">
+<div class="refsynopsisdiv" title="Synopsis">
 <a name="AtkAction.synopsis"></a><h2>Synopsis</h2>
 <pre class="synopsis">
-                    <a href="AtkAction.html#AtkAction-struct" title="AtkAction">AtkAction</a>;
-<a
-href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"
->gboolean</a>            <a href="AtkAction.html#atk-action-do-action" title="atk_action_do_action ()">atk_action_do_action</a>                (<a href="AtkAction.html" title="AtkAction">AtkAction</a> *action,
-                                                         <a
-href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"
->gint</a> i);
-<a
-href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"
->gint</a>                <a href="AtkAction.html#atk-action-get-n-actions" title="atk_action_get_n_actions ()">atk_action_get_n_actions</a>            (<a href="AtkAction.html" title="AtkAction">AtkAction</a> *action);
-const <a
-href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"
->gchar</a>*        <a href="AtkAction.html#atk-action-get-description" title="atk_action_get_description ()">atk_action_get_description</a>          (<a href="AtkAction.html" title="AtkAction">AtkAction</a> *action,
-                                                         <a
-href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"
->gint</a> i);
-const <a
-href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"
->gchar</a>*        <a href="AtkAction.html#atk-action-get-name" title="atk_action_get_name ()">atk_action_get_name</a>                 (<a href="AtkAction.html" title="AtkAction">AtkAction</a> *action,
-                                                         <a
-href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"
->gint</a> i);
-const <a
-href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"
->gchar</a>*        <a href="AtkAction.html#atk-action-get-localized-name" title="atk_action_get_localized_name ()">atk_action_get_localized_name</a>       (<a href="AtkAction.html" title="AtkAction">AtkAction</a> *action,
-                                                         <a
-href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"
->gint</a> i);
-const <a
-href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"
->gchar</a>*        <a href="AtkAction.html#atk-action-get-keybinding" title="atk_action_get_keybinding ()">atk_action_get_keybinding</a>           (<a href="AtkAction.html" title="AtkAction">AtkAction</a> *action,
-                                                         <a
-href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"
->gint</a> i);
-<a
-href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"
->gboolean</a>            <a href="AtkAction.html#atk-action-set-description" title="atk_action_set_description ()">atk_action_set_description</a>          (<a href="AtkAction.html" title="AtkAction">AtkAction</a> *action,
-                                                         <a
-href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"
->gint</a> i,
-                                                         const <a
-href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"
->gchar</a> *desc);
+                    <a class="link" href="AtkAction.html#AtkAction-struct" title="AtkAction">AtkAction</a>;
+gboolean            <a class="link" href="AtkAction.html#atk-action-do-action" title="atk_action_do_action ()">atk_action_do_action</a>                (<a class="link" href="AtkAction.html" title="AtkAction">AtkAction</a> *action,
+                                                         gint i);
+gint                <a class="link" href="AtkAction.html#atk-action-get-n-actions" title="atk_action_get_n_actions ()">atk_action_get_n_actions</a>            (<a class="link" href="AtkAction.html" title="AtkAction">AtkAction</a> *action);
+const gchar*        <a class="link" href="AtkAction.html#atk-action-get-description" title="atk_action_get_description ()">atk_action_get_description</a>          (<a class="link" href="AtkAction.html" title="AtkAction">AtkAction</a> *action,
+                                                         gint i);
+const gchar*        <a class="link" href="AtkAction.html#atk-action-get-name" title="atk_action_get_name ()">atk_action_get_name</a>                 (<a class="link" href="AtkAction.html" title="AtkAction">AtkAction</a> *action,
+                                                         gint i);
+const gchar*        <a class="link" href="AtkAction.html#atk-action-get-localized-name" title="atk_action_get_localized_name ()">atk_action_get_localized_name</a>       (<a class="link" href="AtkAction.html" title="AtkAction">AtkAction</a> *action,
+                                                         gint i);
+const gchar*        <a class="link" href="AtkAction.html#atk-action-get-keybinding" title="atk_action_get_keybinding ()">atk_action_get_keybinding</a>           (<a class="link" href="AtkAction.html" title="AtkAction">AtkAction</a> *action,
+                                                         gint i);
+gboolean            <a class="link" href="AtkAction.html#atk-action-set-description" title="atk_action_set_description ()">atk_action_set_description</a>          (<a class="link" href="AtkAction.html" title="AtkAction">AtkAction</a> *action,
+                                                         gint i,
+                                                         const gchar *desc);
 </pre>
 </div>
-<div class="refsect1" lang="en">
+<div class="refsect1" title="Object Hierarchy">
 <a name="AtkAction.object-hierarchy"></a><h2>Object Hierarchy</h2>
 <pre class="synopsis">
   GInterface
    +----AtkAction
 </pre>
 </div>
-<div class="refsect1" lang="en">
+<div class="refsect1" title="Known Implementations">
 <a name="AtkAction.implementations"></a><h2>Known Implementations</h2>
 <p>
 AtkAction is implemented by
- <a href="AtkHyperlink.html" title="AtkHyperlink">AtkHyperlink</a> and  <a href="AtkNoOpObject.html" title="AtkNoOpObject">AtkNoOpObject</a>.</p>
+ <a class="link" href="AtkHyperlink.html" title="AtkHyperlink">AtkHyperlink</a> and  <a class="link" href="AtkNoOpObject.html" title="AtkNoOpObject">AtkNoOpObject</a>.</p>
 </div>
-<div class="refsect1" lang="en">
+<div class="refsect1" title="Description">
 <a name="AtkAction.description"></a><h2>Description</h2>
 <p>
-<a href="AtkAction.html" title="AtkAction"><span class="type">AtkAction</span></a> should be implemented by instances of <a href="AtkObject.html" title="AtkObject"><span class="type">AtkObject</span></a> classes with
+<a class="link" href="AtkAction.html" title="AtkAction"><span class="type">AtkAction</span></a> should be implemented by instances of <a class="link" href="AtkObject.html" title="AtkObject"><span class="type">AtkObject</span></a> classes with
 which the user can interact directly, i.e. buttons, checkboxes,
 scrollbars,  e.g. components which are not "passive"
 providers of UI information.
 </p>
 <p>
 Exceptions: when the user interaction is already covered by
-another appropriate interface such as <a href="AtkEditableText.html" title="AtkEditableText"><span class="type">AtkEditableText</span></a> (insert/delete
-test, etc.) or <a href="AtkValue.html" title="AtkValue"><span class="type">AtkValue</span></a> (set value) then these actions should not be
-exposed by <a href="AtkAction.html" title="AtkAction"><span class="type">AtkAction</span></a> as well.
+another appropriate interface such as <a class="link" href="AtkEditableText.html" title="AtkEditableText"><span class="type">AtkEditableText</span></a> (insert/delete
+test, etc.) or <a class="link" href="AtkValue.html" title="AtkValue"><span class="type">AtkValue</span></a> (set value) then these actions should not be
+exposed by <a class="link" href="AtkAction.html" title="AtkAction"><span class="type">AtkAction</span></a> as well.
 </p>
 <p>
-Also note that the <a href="AtkAction.html" title="AtkAction"><span class="type">AtkAction</span></a> API is limited in that parameters may not
+Also note that the <a class="link" href="AtkAction.html" title="AtkAction"><span class="type">AtkAction</span></a> API is limited in that parameters may not
 be passed to the object being activated; thus the action must be
 self-contained and specifiable via only a single "verb".  Concrete
 examples include "press", "release", "click" for buttons, "drag"
@@ -136,14 +108,14 @@ Though most UI interactions on components should be invocable via
 keyboard as well as mouse, there will generally be a close mapping
 between "mouse actions" that are possible on a component and the
 AtkActions.  Where mouse and keyboard actions are redundant in effect,
-<a href="AtkAction.html" title="AtkAction"><span class="type">AtkAction</span></a> should expose only one action rather than exposing redundant
+<a class="link" href="AtkAction.html" title="AtkAction"><span class="type">AtkAction</span></a> should expose only one action rather than exposing redundant
 actions if possible.  By convention we have been using "mouse centric"
-terminology for <a href="AtkAction.html" title="AtkAction"><span class="type">AtkAction</span></a> names.
+terminology for <a class="link" href="AtkAction.html" title="AtkAction"><span class="type">AtkAction</span></a> names.
 </p>
 </div>
-<div class="refsect1" lang="en">
+<div class="refsect1" title="Details">
 <a name="AtkAction.details"></a><h2>Details</h2>
-<div class="refsect2" lang="en">
+<div class="refsect2" title="AtkAction">
 <a name="AtkAction-struct"></a><h3>AtkAction</h3>
 <pre class="programlisting">typedef struct _AtkAction AtkAction;</pre>
 <p>
@@ -151,14 +123,10 @@ The AtkAction structure does not contain any fields.
 </p>
 </div>
 <hr>
-<div class="refsect2" lang="en">
+<div class="refsect2" title="atk_action_do_action ()">
 <a name="atk-action-do-action"></a><h3>atk_action_do_action ()</h3>
-<pre class="programlisting"><a
-href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"
->gboolean</a>            atk_action_do_action                (<a href="AtkAction.html" title="AtkAction">AtkAction</a> *action,
-                                                         <a
-href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"
->gint</a> i);</pre>
+<pre class="programlisting">gboolean            atk_action_do_action                (<a class="link" href="AtkAction.html" title="AtkAction">AtkAction</a> *action,
+                                                         gint i);</pre>
 <p>
 Perform the specified action on the object.</p>
 <p>
@@ -167,27 +135,18 @@ Perform the specified action on the object.</p>
 <col align="left" valign="top">
 <tbody>
 <tr>
-<td>
-<span class="term"><em class="parameter"><code>action</code></em> :</span></td>
-<td> a <a
-href="http://library.gnome.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#GObject"
-><span class="type">GObject</span></a> instance that implements AtkActionIface
+<td><p><span class="term"><em class="parameter"><code>action</code></em> :</span></p></td>
+<td> a <span class="type">GObject</span> instance that implements AtkActionIface
 </td>
 </tr>
 <tr>
-<td>
-<span class="term"><em class="parameter"><code>i</code></em> :</span></td>
+<td><p><span class="term"><em class="parameter"><code>i</code></em> :</span></p></td>
 <td> the action index corresponding to the action to be performed 
 </td>
 </tr>
 <tr>
-<td>
-<span class="term"><span class="emphasis"><em>Returns</em></span> :</span></td>
-<td> <a
-href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#TRUE--CAPS"
-><code class="literal">TRUE</code></a> if success, <a
-href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#FALSE--CAPS"
-><code class="literal">FALSE</code></a> otherwise
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td> <code class="literal">TRUE</code> if success, <code class="literal">FALSE</code> otherwise
 
 </td>
 </tr>
@@ -195,11 +154,9 @@ href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#FAL
 </table></div>
 </div>
 <hr>
-<div class="refsect2" lang="en">
+<div class="refsect2" title="atk_action_get_n_actions ()">
 <a name="atk-action-get-n-actions"></a><h3>atk_action_get_n_actions ()</h3>
-<pre class="programlisting"><a
-href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"
->gint</a>                atk_action_get_n_actions            (<a href="AtkAction.html" title="AtkAction">AtkAction</a> *action);</pre>
+<pre class="programlisting">gint                atk_action_get_n_actions            (<a class="link" href="AtkAction.html" title="AtkAction">AtkAction</a> *action);</pre>
 <p>
 Gets the number of accessible actions available on the object.
 If there are more than one, the first one is considered the
@@ -210,16 +167,12 @@ If there are more than one, the first one is considered the
 <col align="left" valign="top">
 <tbody>
 <tr>
-<td>
-<span class="term"><em class="parameter"><code>action</code></em> :</span></td>
-<td> a <a
-href="http://library.gnome.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#GObject"
-><span class="type">GObject</span></a> instance that implements AtkActionIface
+<td><p><span class="term"><em class="parameter"><code>action</code></em> :</span></p></td>
+<td> a <span class="type">GObject</span> instance that implements AtkActionIface
 </td>
 </tr>
 <tr>
-<td>
-<span class="term"><span class="emphasis"><em>Returns</em></span> :</span></td>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
 <td> a the number of actions, or 0 if <em class="parameter"><code>action</code></em> does not
 implement this interface.
 </td>
@@ -228,14 +181,10 @@ implement this interface.
 </table></div>
 </div>
 <hr>
-<div class="refsect2" lang="en">
+<div class="refsect2" title="atk_action_get_description ()">
 <a name="atk-action-get-description"></a><h3>atk_action_get_description ()</h3>
-<pre class="programlisting">const <a
-href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"
->gchar</a>*        atk_action_get_description          (<a href="AtkAction.html" title="AtkAction">AtkAction</a> *action,
-                                                         <a
-href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"
->gint</a> i);</pre>
+<pre class="programlisting">const gchar*        atk_action_get_description          (<a class="link" href="AtkAction.html" title="AtkAction">AtkAction</a> *action,
+                                                         gint i);</pre>
 <p>
 Returns a description of the specified action of the object.</p>
 <p>
@@ -244,25 +193,18 @@ Returns a description of the specified action of the object.</p>
 <col align="left" valign="top">
 <tbody>
 <tr>
-<td>
-<span class="term"><em class="parameter"><code>action</code></em> :</span></td>
-<td> a <a
-href="http://library.gnome.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#GObject"
-><span class="type">GObject</span></a> instance that implements AtkActionIface
+<td><p><span class="term"><em class="parameter"><code>action</code></em> :</span></p></td>
+<td> a <span class="type">GObject</span> instance that implements AtkActionIface
 </td>
 </tr>
 <tr>
-<td>
-<span class="term"><em class="parameter"><code>i</code></em> :</span></td>
+<td><p><span class="term"><em class="parameter"><code>i</code></em> :</span></p></td>
 <td> the action index corresponding to the action to be performed 
 </td>
 </tr>
 <tr>
-<td>
-<span class="term"><span class="emphasis"><em>Returns</em></span> :</span></td>
-<td>a description string, or <a
-href="/usr/share/gtk-doc/html/liboil/liboil-liboiljunk.html#NULL--CAPS"
-><code class="literal">NULL</code></a>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>a description string, or <code class="literal">NULL</code>
 if <em class="parameter"><code>action</code></em> does not implement this interface.
 </td>
 </tr>
@@ -270,14 +212,10 @@ if <em class="parameter"><code>action</code></em> does not implement this interf
 </table></div>
 </div>
 <hr>
-<div class="refsect2" lang="en">
+<div class="refsect2" title="atk_action_get_name ()">
 <a name="atk-action-get-name"></a><h3>atk_action_get_name ()</h3>
-<pre class="programlisting">const <a
-href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"
->gchar</a>*        atk_action_get_name                 (<a href="AtkAction.html" title="AtkAction">AtkAction</a> *action,
-                                                         <a
-href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"
->gint</a> i);</pre>
+<pre class="programlisting">const gchar*        atk_action_get_name                 (<a class="link" href="AtkAction.html" title="AtkAction">AtkAction</a> *action,
+                                                         gint i);</pre>
 <p>
 Returns a non-localized string naming the specified action of the 
 object. This name is generally not descriptive of the end result 
@@ -292,7 +230,7 @@ object, if one exists.
 <p>
 For technical reasons, some toolkits cannot guarantee that the 
 reported action is actually 'bound' to a nontrivial user event;
-i.e. the result of some actions via <a href="AtkAction.html#atk-action-do-action" title="atk_action_do_action ()"><code class="function">atk_action_do_action()</code></a> may be
+i.e. the result of some actions via <a class="link" href="AtkAction.html#atk-action-do-action" title="atk_action_do_action ()"><code class="function">atk_action_do_action()</code></a> may be
 NIL.</p>
 <p>
 </p>
@@ -300,25 +238,18 @@ NIL.</p>
 <col align="left" valign="top">
 <tbody>
 <tr>
-<td>
-<span class="term"><em class="parameter"><code>action</code></em> :</span></td>
-<td> a <a
-href="http://library.gnome.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#GObject"
-><span class="type">GObject</span></a> instance that implements AtkActionIface
+<td><p><span class="term"><em class="parameter"><code>action</code></em> :</span></p></td>
+<td> a <span class="type">GObject</span> instance that implements AtkActionIface
 </td>
 </tr>
 <tr>
-<td>
-<span class="term"><em class="parameter"><code>i</code></em> :</span></td>
+<td><p><span class="term"><em class="parameter"><code>i</code></em> :</span></p></td>
 <td> the action index corresponding to the action to be performed 
 </td>
 </tr>
 <tr>
-<td>
-<span class="term"><span class="emphasis"><em>Returns</em></span> :</span></td>
-<td>a name string, or <a
-href="/usr/share/gtk-doc/html/liboil/liboil-liboiljunk.html#NULL--CAPS"
-><code class="literal">NULL</code></a>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>a name string, or <code class="literal">NULL</code>
 if <em class="parameter"><code>action</code></em> does not implement this interface.
 </td>
 </tr>
@@ -326,14 +257,10 @@ if <em class="parameter"><code>action</code></em> does not implement this interf
 </table></div>
 </div>
 <hr>
-<div class="refsect2" lang="en">
+<div class="refsect2" title="atk_action_get_localized_name ()">
 <a name="atk-action-get-localized-name"></a><h3>atk_action_get_localized_name ()</h3>
-<pre class="programlisting">const <a
-href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"
->gchar</a>*        atk_action_get_localized_name       (<a href="AtkAction.html" title="AtkAction">AtkAction</a> *action,
-                                                         <a
-href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"
->gint</a> i);</pre>
+<pre class="programlisting">const gchar*        atk_action_get_localized_name       (<a class="link" href="AtkAction.html" title="AtkAction">AtkAction</a> *action,
+                                                         gint i);</pre>
 <p>
 Returns the localized name of the specified action of the object.</p>
 <p>
@@ -342,25 +269,18 @@ Returns the localized name of the specified action of the object.</p>
 <col align="left" valign="top">
 <tbody>
 <tr>
-<td>
-<span class="term"><em class="parameter"><code>action</code></em> :</span></td>
-<td> a <a
-href="http://library.gnome.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#GObject"
-><span class="type">GObject</span></a> instance that implements AtkActionIface
+<td><p><span class="term"><em class="parameter"><code>action</code></em> :</span></p></td>
+<td> a <span class="type">GObject</span> instance that implements AtkActionIface
 </td>
 </tr>
 <tr>
-<td>
-<span class="term"><em class="parameter"><code>i</code></em> :</span></td>
+<td><p><span class="term"><em class="parameter"><code>i</code></em> :</span></p></td>
 <td> the action index corresponding to the action to be performed 
 </td>
 </tr>
 <tr>
-<td>
-<span class="term"><span class="emphasis"><em>Returns</em></span> :</span></td>
-<td>a name string, or <a
-href="/usr/share/gtk-doc/html/liboil/liboil-liboiljunk.html#NULL--CAPS"
-><code class="literal">NULL</code></a>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>a name string, or <code class="literal">NULL</code>
 if <em class="parameter"><code>action</code></em> does not implement this interface.
 </td>
 </tr>
@@ -368,14 +288,10 @@ if <em class="parameter"><code>action</code></em> does not implement this interf
 </table></div>
 </div>
 <hr>
-<div class="refsect2" lang="en">
+<div class="refsect2" title="atk_action_get_keybinding ()">
 <a name="atk-action-get-keybinding"></a><h3>atk_action_get_keybinding ()</h3>
-<pre class="programlisting">const <a
-href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"
->gchar</a>*        atk_action_get_keybinding           (<a href="AtkAction.html" title="AtkAction">AtkAction</a> *action,
-                                                         <a
-href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"
->gint</a> i);</pre>
+<pre class="programlisting">const gchar*        atk_action_get_keybinding           (<a class="link" href="AtkAction.html" title="AtkAction">AtkAction</a> *action,
+                                                         gint i);</pre>
 <p>
 Returns a keybinding associated with this action, if one exists.
 The returned string is in the format "&lt;a&gt;;&lt;b&gt;;&lt;c&gt;"
@@ -394,25 +310,18 @@ enclosing menus or dialogs.</p>
 <col align="left" valign="top">
 <tbody>
 <tr>
-<td>
-<span class="term"><em class="parameter"><code>action</code></em> :</span></td>
-<td> a <a
-href="http://library.gnome.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#GObject"
-><span class="type">GObject</span></a> instance that implements AtkActionIface
+<td><p><span class="term"><em class="parameter"><code>action</code></em> :</span></p></td>
+<td> a <span class="type">GObject</span> instance that implements AtkActionIface
 </td>
 </tr>
 <tr>
-<td>
-<span class="term"><em class="parameter"><code>i</code></em> :</span></td>
+<td><p><span class="term"><em class="parameter"><code>i</code></em> :</span></p></td>
 <td> the action index corresponding to the action to be performed 
 </td>
 </tr>
 <tr>
-<td>
-<span class="term"><span class="emphasis"><em>Returns</em></span> :</span></td>
-<td>a string representing the available keybindings, or <a
-href="/usr/share/gtk-doc/html/liboil/liboil-liboiljunk.html#NULL--CAPS"
-><code class="literal">NULL</code></a>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>a string representing the available keybindings, or <code class="literal">NULL</code>
 if there is no keybinding for this action.
 
 </td>
@@ -421,17 +330,11 @@ if there is no keybinding for this action.
 </table></div>
 </div>
 <hr>
-<div class="refsect2" lang="en">
+<div class="refsect2" title="atk_action_set_description ()">
 <a name="atk-action-set-description"></a><h3>atk_action_set_description ()</h3>
-<pre class="programlisting"><a
-href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"
->gboolean</a>            atk_action_set_description          (<a href="AtkAction.html" title="AtkAction">AtkAction</a> *action,
-                                                         <a
-href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"
->gint</a> i,
-                                                         const <a
-href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"
->gchar</a> *desc);</pre>
+<pre class="programlisting">gboolean            atk_action_set_description          (<a class="link" href="AtkAction.html" title="AtkAction">AtkAction</a> *action,
+                                                         gint i,
+                                                         const gchar *desc);</pre>
 <p>
 Sets a description of the specified action of the object.</p>
 <p>
@@ -440,28 +343,22 @@ Sets a description of the specified action of the object.</p>
 <col align="left" valign="top">
 <tbody>
 <tr>
-<td>
-<span class="term"><em class="parameter"><code>action</code></em> :</span></td>
-<td> a <a
-href="http://library.gnome.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#GObject"
-><span class="type">GObject</span></a> instance that implements AtkActionIface
+<td><p><span class="term"><em class="parameter"><code>action</code></em> :</span></p></td>
+<td> a <span class="type">GObject</span> instance that implements AtkActionIface
 </td>
 </tr>
 <tr>
-<td>
-<span class="term"><em class="parameter"><code>i</code></em> :</span></td>
+<td><p><span class="term"><em class="parameter"><code>i</code></em> :</span></p></td>
 <td> the action index corresponding to the action to be performed 
 </td>
 </tr>
 <tr>
-<td>
-<span class="term"><em class="parameter"><code>desc</code></em> :</span></td>
+<td><p><span class="term"><em class="parameter"><code>desc</code></em> :</span></p></td>
 <td> the description to be assigned to this action
 </td>
 </tr>
 <tr>
-<td>
-<span class="term"><span class="emphasis"><em>Returns</em></span> :</span></td>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
 <td> a gboolean representing if the description was successfully set;
 </td>
 </tr>

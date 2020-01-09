@@ -2,13 +2,13 @@
 
 Summary: Interfaces for accessibility support
 Name: atk
-Version: 1.28.0
-Release: 2%{?dist}
+Version: 1.30.0
+Release: 1%{?dist}
 License: LGPLv2+
 Group: System Environment/Libraries
-Source: http://download.gnome.org/sources/atk/1.28/atk-%{version}.tar.bz2
+#VCS: git:git://git.gnome.org/atk
+Source: http://download.gnome.org/sources/atk/1.30/atk-%{version}.tar.bz2
 URL: http://developer.gnome.org/projects/gap/
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 BuildRequires: glib2-devel >= %{glib2_version}
 BuildRequires: gnome-doc-utils
 BuildRequires: gettext
@@ -26,22 +26,19 @@ Group: Development/Libraries
 Requires: %{name} = %{version}-%{release}
 Requires: glib2-devel >= %{glib2_version}
 Requires: pkgconfig
-Requires: gtk-doc
 
 %description devel
-This package includes libraries, header files, and developer documentation 
+This package includes libraries, header files, and developer documentation
 needed for development of applications or toolkits which use ATK.
 
 %prep
 %setup -q
 
 %build
-%configure --disable-gtk-doc
+%configure --disable-gtk-doc --disable-introspection
 make %{?_smp_mflags}
 
 %install
-rm -rf $RPM_BUILD_ROOT
-
 make install DESTDIR=$RPM_BUILD_ROOT
 
 rm -f $RPM_BUILD_ROOT%{_libdir}/*.la
@@ -69,6 +66,12 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/gtk-doc/html/atk
 
 %changelog
+* Thu Jun  6 2013 Matthew Barnes <mbarnes@redhat.com> - 1.30.0-1
+- Rebase to 1.30.0 based on the Fedora 13 package.
+- Build with introspection disabled since glib-introspection is not
+  avalable in rhel6.
+Resolves: #883027
+
 * Wed Dec  2 2009 Matthias Clasen <mclasen@redhat.com> - 1.28.0-2
 - Drop unneeded BR
 
